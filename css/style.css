@@ -1,0 +1,68 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  height: 300px;
+  margin: 0 auto;
+}
+.row{
+  height: 300px;
+}
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.row .row{
+  padding: 10px;
+}
+.row [class*='col-']{
+  float: left;
+  height: 100%;
+  border: 2px solid black;
+  line-height: 300px;
+  text-align: center;
+  background-color: grey;
+} 
+.row .row [class*='col-']{
+  background-color: orangered;
+} 
+.row .col-1{
+  width: calc(100% / 12 * 1);
+} 
+.row .col-2{
+  width: calc(100% / 12 * 2);
+} 
+.row .col-3{
+  width: calc(100% / 12 * 3);
+}
+.row .col-4{
+  width: calc(100% / 12 * 4);
+}
+.row .col-5{
+  width: calc(100% / 12 * 5 );
+}
+.row .col-6{
+  width: calc(100% / 12 * 6 );
+}
+.row .col-7{
+  width: calc(100% / 12 * 7 );
+}
+.row .col-8{
+  width: calc(100% / 12 * 8 );
+}
+.row .col-9{
+  width: calc(100% / 12 * 9 );
+}
+.row .col-10{
+  width: calc(100% / 12 * 10 );
+}
+.row .col-11{
+  width: calc(100% / 12 * 11 );
+}
+.row .col-12{
+  width: calc(100% / 12 * 12 );
+}
