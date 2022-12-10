@@ -45,9 +45,6 @@ ul li{
   display: inline-block;
   margin-right: 30px;
 }
-ul li a{
-  display: inline-block;
-}
 nav .left > a {
   text-transform: none;
   font-size: 43px;
@@ -79,6 +76,7 @@ main{
   font-weight: bold;
   font-size: 22px;
   position: relative;
+  text-align: right;
 }
 .row [class*="col-"] i{
   font-size: 80px;
@@ -86,9 +84,6 @@ main{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-}
-.row [class*="col-"]:last-child{
-  text-align: right;
 }
 .row:last-child [class*="col-"] span{
   position: absolute;
