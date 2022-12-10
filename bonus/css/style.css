@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #EDEBE9;
+  font-family: 'Noto Sans', Sans-Serif;
+}
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgb(49 49 49 / 64%);
+}
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+nav{
+  width: 90%;
+  margin: 0 auto;
+  line-height: 80px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgb(44, 41, 41);
+  letter-spacing: 4px;
+}
+ul{
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+ul li{
+  display: inline-block;
+  margin-right: 30px;
+}
+ul li a{
+  display: inline-block;
+}
+nav .left > a {
+  text-transform: none;
+  font-size: 43px;
+  font-weight: bold;
+}
+nav .right i {
+  font-size: 23px;
+  margin-right: 40px;
+}
+main{
+  margin: 100px 0;
+}
+.row{
+  height: 146px;
+}
+.row .col-1{
+  width: calc(100% / 8 * 1);
+}
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class*="col-"]{
+  float: left;
+  height: 100%;
+  background-color: #F0D9B5;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 22px;
+  position: relative;
+}
+.row [class*="col-"] i{
+  font-size: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.row [class*="col-"]:last-child{
+  text-align: right;
+}
+.row:last-child [class*="col-"] span{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.row:nth-child(odd) [class*="col-"]:nth-child(even),
+.row:nth-child(even) [class*="col-"]:nth-child(odd){
+  float: left;
+  height: 100%;
+  background-color: #B58863;
+}
