@@ -12,6 +12,12 @@ body{
   margin: 0 auto;
   box-shadow: 0 0 10px rgb(49 49 49 / 64%);
 }
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
 .clearfix::after{
   content: "";
   display: table;
@@ -20,12 +26,6 @@ body{
 a{
   text-decoration: none;
   color: inherit;
-}
-.left{
-  float: left;
-}
-.right{
-  float: right;
 }
 nav{
   width: 90%;
@@ -92,7 +92,5 @@ main{
 }
 .row:nth-child(odd) [class*="col-"]:nth-child(even),
 .row:nth-child(even) [class*="col-"]:nth-child(odd){
-  float: left;
-  height: 100%;
   background-color: #B58863;
 }
